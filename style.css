@@ -1,0 +1,132 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+header {
+  background-color: #6d4aad;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+main {
+  padding: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #6d4aad;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+.button:hover {
+  background-color: #5a3a8c;
+}
+
+.input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.word-container {
+  font-size: 48px;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.meaning {
+  font-size: 22px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.example-sentence {
+  font-size: 32px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.example-sentences h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.example-sentences div {
+  margin-top: 5px;
+}
+
+#next-word {
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.play-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.play-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.material-symbols-outlined {
+  font-size: 60px !important;
+  cursor: pointer;
+  color: #8C1AF6;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
