@@ -1,2 +1,2 @@
 # wklisten
-WaniKani listening practice site
+Practice page that allows users to do listening practice with their WaniKani vocab words.
