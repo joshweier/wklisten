@@ -4,6 +4,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 .input::placeholder {
@@ -12,12 +13,91 @@ body {
 
 .container {
   max-width: 800px;
+  min-height: 350px;
   margin: 50px auto;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
+  margin-bottom: 25px;
+}
+
+#api-key {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: top;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#api-key .container {
+  min-height: 150px !important;
+  height: 0;
+}
+
+#api-text {
+  font-size: 24px;
+  color: #6d4aad;
+}
+
+#loading-screen {
+  color: #6d4aad;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: top;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#loading-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #6d4aad;
+  margin-top: 200px;
+}
+
+#missed-words {
+  min-height: 0 !important;
+  display: flex;
+  padding: 20px;
+}
+
+.missed-word {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: auto;
+}
+
+.minor {
+  background-color: lightgreen;
+}
+
+.medium {
+  background-color: lightgoldenrodyellow;
+}
+
+.major {
+  background-color: lightcoral;
+  color: white;
 }
 
 header {
@@ -83,12 +163,13 @@ main {
 }
 
 .word-container {
-  font-size: 48px;
+  font-size: 65px;
   margin: 20px 0;
   padding: 10px;
   background-color: #f5f5f5;
   border-radius: 4px;
   text-align: center;
+  font-weight: bold;
 }
 
 .meaning {
@@ -160,4 +241,12 @@ main {
 
 .font-medium {
   font-size: 45px !important;
+}
+
+#progress {
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+  opacity: 0.5;
 }
