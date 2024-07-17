@@ -345,6 +345,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const progess = document.getElementById('progress');
     const missedWordsContainer = document.getElementById('missed-words');
 
+    const apiKeyScreen = document.getElementById('api-key');
+    const apiKeyInput = document.getElementById('api-key-input');
+    const apiKeyButton = document.getElementById('api-key-button');
     // Set focus to the input box when the page loads
     userInput.focus();
 
@@ -353,7 +356,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         apiKey = loadAPIKey();
         if (!apiKey) {
             // Show the API key entry screen
-            bodyContent.style.display = 'none';
+            mainContent.style.display = 'none';
             apiKeyScreen.style.display = 'flex';
 
             // Check for valid input
