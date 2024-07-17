@@ -348,7 +348,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const apiKeyScreen = document.getElementById('api-key');
     const apiKeyInput = document.getElementById('api-key-input');
     const apiKeyButton = document.getElementById('api-key-button');
-
     // Set focus to the input box when the page loads
     userInput.focus();
 
